@@ -13,7 +13,6 @@ for(const eachDrums of myDrums){
   })
 }
 
-
 document.addEventListener('keypress',function(event){
       makeSound(event.key)
       btnClickAnimation(event.key)
@@ -54,13 +53,12 @@ function makeSound(key){
       }
 
 }
-
-// btnClickAnimation
+// btnClickAnimations
 function btnClickAnimation(key){
  const activeBtn = document.querySelector('.'+ key)
  activeBtn.classList.add('pressed')
  setTimeout(() => {
   activeBtn.classList.remove('pressed')
- }, 100);
+ }, 200);
 
 }
