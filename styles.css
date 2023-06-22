@@ -79,20 +79,6 @@ footer {
   background-color: white;
 }
 
-/* @media screen and (max-width: 480px) {
-  body {
-    transform: rotate(90deg);
-    transform-origin: left top;
-    width: 100vh;
-    height: 100vw;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-  .drum {
-  }
-} */
 /* Mobile Query */
 .display {
   display: block;
@@ -153,6 +139,4 @@ footer {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
-@media screen and (orientation: landscape) and (min-device-width: 319px) and (max-device-width: 480px) {
 }
