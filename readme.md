@@ -2,7 +2,7 @@
 
 This is a simple web application called "Drum Kit" that allows users to play drum sounds by clicking on virtual drum buttons or pressing corresponding keys on the keyboard. It is built using HTML, CSS, and JavaScript.
 
-You can access the Drum Kit web application by following this [link](https://yosami14.github.io/Drum-Kit/).
+You can access the Drum Kit web application by following this [link](https://example.com/drum-kit).
 
 ### Features
 
