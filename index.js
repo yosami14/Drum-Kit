@@ -7,9 +7,20 @@ const playlist = new Array('./sounds/tom-1.mp3','./sounds/tom-2.mp3','./sounds/t
 const myDrums = document.querySelectorAll('.drum')
 for(const eachDrums of myDrums){
   eachDrums.addEventListener('click', function(){
+    var buttonInnerContent = eachDrums.textContent;
+    makeSound(buttonInnerContent);
+    btnClickAnimation(buttonInnerContent)
+  })
+}
 
 
-      switch(eachDrums.textContent) {
+document.addEventListener('keypress',function(event){
+      makeSound(event.key)
+      btnClickAnimation(event.key)
+})
+
+function makeSound(key){
+        switch(key) {
         case 'w':
           audio.src = (playlist[0]);
           audio.play()
@@ -42,9 +53,14 @@ for(const eachDrums of myDrums){
           alert('error')
       }
 
-
-
-  })
 }
 
+// btnClickAnimation
+function btnClickAnimation(key){
+ const activeBtn = document.querySelector('.'+ key)
+ activeBtn.classList.add('pressed')
+ setTimeout(() => {
+  activeBtn.classList.remove('pressed')
+ }, 100);
 
+}
